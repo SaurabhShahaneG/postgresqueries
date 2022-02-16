@@ -32,3 +32,6 @@ SELECT postgis_full_version();
 
 -- wal replay paused check. recovery control function
 select pg_is_wal_replay_paused();
+
+-- list all the available extensions in postgres
+select * from pg_available_extensions;
