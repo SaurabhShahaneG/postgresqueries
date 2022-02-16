@@ -35,3 +35,5 @@ select pg_is_wal_replay_paused();
 
 -- list all the available extensions in postgres
 select * from pg_available_extensions;
+
+--
