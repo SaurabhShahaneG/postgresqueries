@@ -36,4 +36,7 @@ select pg_is_wal_replay_paused();
 -- list all the available extensions in postgres
 select * from pg_available_extensions;
 
---
+--altering columns's data type
+ALTER TABLE assets
+ALTER COLUMN asset_no TYPE INT 
+USING asset_no::integer;
