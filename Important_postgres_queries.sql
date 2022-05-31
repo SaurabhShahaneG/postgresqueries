@@ -40,3 +40,9 @@ select * from pg_available_extensions;
 ALTER TABLE assets
 ALTER COLUMN asset_no TYPE INT 
 USING asset_no::integer;
+
+--check database size
+SELECT pg_size_pretty( pg_database_size('dbname') );
+
+--check table size
+SELECT pg_size_pretty( pg_total_relation_size('tablename') );
