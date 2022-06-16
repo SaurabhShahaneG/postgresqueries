@@ -46,3 +46,9 @@ SELECT pg_size_pretty( pg_database_size('dbname') );
 
 --check table size
 SELECT pg_size_pretty( pg_total_relation_size('tablename') );
+
+--check last value of a sequence
+SELECT last_value FROM sequence_name;
+
+--alter the sequence set to a certain number
+SELECT setval('sequence_name',value_to_be_set,true);
