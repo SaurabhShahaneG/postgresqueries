@@ -52,3 +52,5 @@ SELECT last_value FROM sequence_name;
 
 --alter the sequence set to a certain number
 SELECT setval('sequence_name',value_to_be_set,true);
+--true means that the next value will be the number provided + 1
+--false means that the next value would be the number provided
